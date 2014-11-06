@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soft Corporation Limited</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <%= render 'shared/header' %>
+</header>
+<div class="banner">
+  <%= render 'shared/banner' %>
+</div>
+<div class="main row">
+  <div class="content col-lg-8 col-lg-offset-1">
+    <%= yield %>
+  </div>
+  <div class="sidebar col-lg-2">
+    <h3>Call us: +8801921701690</h3>
+    <h3>Skype: eee.ahsan</h3>
+  </div>
+</div>
+<div class="footer">
+  <p class="copy">Copyright &copy Soft Coporaiton Limited 2014</p>
+</div>
+
+</body>
+</html>
